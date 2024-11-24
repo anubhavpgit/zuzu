@@ -87,23 +87,18 @@ main blockquote {
 }
 
 nav {
-	margin: 1rem 0;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 nav a {
-	margin: 0 0.5rem;
-	font-size: 0.875rem;
-	color: #555;
 	text-decoration: none;
-	padding: 0.5rem 1rem;
-	border-radius: 4px;
-	transition: background-color 0.2s, color 0.2s;
+	color: #333
 }
 
 nav a:hover {
-	background-color: #007acc;
-	color: white;
+	text-decoration: underline;
 }
 
 footer {
@@ -114,8 +109,7 @@ footer {
 }
 
 footer a {
-	color: #007acc;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 footer a:hover {

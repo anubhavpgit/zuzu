@@ -45,7 +45,7 @@ async function generateXmls() {
     for (const file of blogFiles) {
       const filePath = path.join(directoryPath, file);
       if (path.extname(filePath) === ".html" && file !== "index.html") {
-        const url = `${absUrl}/blog/${file}`;
+        const url = `${absUrl}/${file}`;
         const html = await fs.readFile(filePath, "utf-8");
 
         const dom = new JSDOM(html);
@@ -96,7 +96,7 @@ async function generateXmls() {
     for (const file of blogFiles) {
       const filePath = path.join(directoryPath, file);
       if (path.extname(filePath) === ".html" && file !== "index.html") {
-        const url = `${absUrl}/blog/${file}`;
+        const url = `${absUrl}/${file}`;
         const stat = await fs.stat(filePath);
         const lastmod = new Date(stat.mtime).toISOString();
         const changefreq = "monthly"; // You can adjust this as needed
@@ -136,7 +136,7 @@ async function generateXmls() {
       }
     }
 
-    const sitemapXML = `<?xml version="1.0";encoding="utf-8" standalone="yes"?>
+    const sitemapXML = `<?xml version="1.0" encoding="utf-8" standalone="yes"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xhtml="http://www.w3.org/1999/xhtml">
       ${sitemapItems.join("\n")}
