@@ -7,6 +7,9 @@ import mkdirp from "mkdirp";
 import path from "path";
 import hljs from "highlight.js";
 import MarkdownIt from "markdown-it";
+import markdownItCheckbox from "markdown-it-checkbox";
+import markdownItFootnote from "markdown-it-footnote";
+import markdownItKatex from "markdown-it-katex";
 import markdownItAnchor from "markdown-it-anchor";
 import string from "string";
 import { mdToPdf } from "md-to-pdf";
@@ -38,7 +41,10 @@ const md = MarkdownIt({
 
     return null; // If no language is specified, return null
   },
-}).use(markdownItAnchor, { slugify }); // Use markdown-it-anchor plugin with slugify function
+}).use(markdownItAnchor, { slugify }) // Use markdown-it-anchor plugin with slugify function
+  .use(markdownItCheckbox) // Use markdown-it-checkbox plugin
+  .use(markdownItFootnote) // Use markdown-it-footnote plugin
+  .use(markdownItKatex, { throwOnError: false, errorColor: "#cc0000" }); // Use markdown-it-katex plugin
 /**
  * Reads a file and returns its content, parsed and rendered as HTML.
  * @param {string} filename - The filename to read.
