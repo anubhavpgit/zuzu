@@ -2,7 +2,7 @@
 base_url = "https://anubhavp.dev/zuzu/"
 
 # template
-template = "fuzzymfx"
+template = ""
 
 # Path to the directory containing the content
 source_dir = "content"
@@ -11,7 +11,7 @@ source_dir = "content"
 output_dir = "docs"
 
 # Path to the directory containing the templates
-template_dir = "templates/fuzzymfx"
+template_dir = "templates"
 
 # Path to the directory containing the static files
 static_dir = "static"
