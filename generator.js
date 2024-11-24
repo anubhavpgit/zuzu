@@ -188,7 +188,7 @@ const main = () => {
     `./templates/${template_name}/template.html`,
     "utf-8"
   );
-  const assetsPath = path.resolve(`./templates/${template_name}/static`);
+  const assetsPath = path.resolve(`./static`);
 
   const search = config.search;
 
