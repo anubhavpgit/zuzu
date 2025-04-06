@@ -1,10 +1,9 @@
+# DEPRECATED
+## LATEST VERSION IS @ [anubhavpgit/anubhavpgit.github.io](https://github.com/anubhavpgit/anubhavpgit.github.io)
+
 # Zuzu
 > Static Site Generator
 ### Zuzu is a minimal static site generator.
-
-
-# DEPRECATED
-## LATEST VERSION IS @ [anubhavpgit/anubhavpgit.github.io](https://github.com/anubhavpgit/anubhavpgit.github.io)
 
 Zuzu converts all your markdown files into static htmls pages to be rendered quickly. It uses Github falvoured Markdown CSS and highlight js to beautify code snippets. [This blog](https://anubhavp.dev/blog), for example, has been written using this generator. This enables noobs like me to write blogs without having to learn a lot of code! It is a very simple and easy to use generator. All you need to do is to write a markdown file and it will be rendered as a page ;) You can create a new page by creating a new markdown file.  
 
